@@ -394,10 +394,18 @@ h2,
 			playing=1;
 		}
 	}
+	
+	const userLanguage = navigator.language || navigator.browserLanguage || 'en-US';
+
+let langu = userLanguage.split('-')[0];
+if(langu!=="de"){langu="en"}
+
   </script>
   
-  <script src="assets/js/timezone.js"></script>
-
-  <script src="assets/js/lang.js"></script>  
+  
+  
+    <script src="assets/js/timezone.js"></script>
+	<script src="assets/js/lang.js"></script>  
+	
 </body>
 </html>	
