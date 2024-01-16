@@ -54,10 +54,9 @@ const translations = {
   // Add more languages as needed
 };
 
-const userLanguage = navigator.language || navigator.browserLanguage || 'en-US';
+
 const translation = translations[userLanguage.split('-')[0]] || translations['en'];
-let langu = userLanguage.split('-')[0];
-if(langu!=="de"){langu="en"}
+
 
 
 function fetchtranslation(f,g){
@@ -74,7 +73,10 @@ function fetchtranslation(f,g){
 }
 }
 
-document.getElementById("timezone").innerHTML = `${translation.timezone}<b>${getUserTimezone()}</b>`;
+timezone = getUserTimezone();
+if(langu=="de"){timezone = timezone.replace("Europe","Europa");}
+
+document.getElementById("timezone").innerHTML = `${translation.timezone}<b>${timezone}</b>`;
 
 
 let monday = document.getElementById("Monday");
