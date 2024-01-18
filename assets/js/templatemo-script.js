@@ -6,6 +6,8 @@ https://templatemo.com/tm-560-astro-motion
 
 */
 
+pageNumber = 4;
+
 var gallery = undefined;
 
 function closeMenu() {
@@ -71,7 +73,7 @@ function openPage(no) {
 
 $(window).on('load', function() {
   $('body').addClass('loaded');
-  openPage(1);
+  openPage(pageNumber);
 });
 
 jQuery(function() {

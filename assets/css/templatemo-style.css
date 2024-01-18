@@ -114,7 +114,7 @@ h2 {
 
 .navbar .navbar-nav .nav-item .nav-link {
     font-size: 1.5rem;
-    padding: 15px 65px;
+    padding: 15px calc(100vw / 50);
     border-bottom: 1px solid white;
 }
 

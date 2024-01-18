@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css" type="text/css" /> 
     <link rel="stylesheet" href="assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="assets/css/button.css">
 	
 <!--
     
@@ -110,6 +111,51 @@ h2,
 	color: #ff33ff;
 }
 
+@keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1) rotate(0deg);
+            }
+            30%, 70% {
+                transform: scale(1.1) ;
+            }
+
+            90% {
+                transform: rotate(-2deg);
+            }
+
+            92% {
+                transform: rotate(+2deg);
+            }
+
+        }
+		
+		
+		
+@keyframes pulseShadow {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+            }
+            30%, 70% {
+                box-shadow: 0 0 20px rgba(52, 152, 219, 0.9);
+            }
+            50% {
+                box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+        }
+
+/*https://paulund.co.uk/create-pulse-effect-with-css3-animation*/
+        .pulsating-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff88ff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulseShadow 4s infinite;
+        }
+
+
 </style>
 </head>
 <body>
@@ -142,7 +188,11 @@ h2,
                         <div class="circle"></div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" data-no="4" id="contact">Contact</a>
+                        <a class="nav-link" href="#" data-no="4" id="Goodies">Goodies</a>
+                        <div class="circle"></div>
+                      </li>					  
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-no="5" id="contact">Contact</a>
                         <div class="circle"></div>
                       </li>
                     </ul>
@@ -302,6 +352,17 @@ h2,
             </div>
           </li>
           <li data-page-no="4" class="px-3">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+              <div class="tm-bg-dark content-pad">
+				<p id="goodies">Lorem</p>
+              </div>              
+            </div>
+          </li>          
+		  <li data-page-no="5" class="px-3">
             <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom" style="max-width:300px;">
               <div class="circle intro-circle-1"></div>
               <div class="circle intro-circle-2"></div>
@@ -318,7 +379,7 @@ h2,
               </div>              
             </div>
           </li>
-          <li data-page-no="5">
+          <li data-page-no="6">
             <div class="mx-auto page-width-2">
               <div class="row">
                 <div class="col-md-6 me-0 ms-auto">

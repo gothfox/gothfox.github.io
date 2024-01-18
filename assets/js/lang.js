@@ -127,6 +127,9 @@ if(infotext){fetchtranslation("infotext","infotext");}
 let autobio = document.getElementById("autobio");
 //if(autobio){fetchtranslation("autobio","luminousfox");}
 
+let goodies = document.getElementById("goodies");
+if(goodies){fetchtranslation("goodies","goodies");}
+
 let contacth2 = document.getElementById("contacth2");
 if(contacth2){contacth2.innerHTML = `${translation.contacth2}`}
 
