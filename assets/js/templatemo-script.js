@@ -6,7 +6,7 @@ https://templatemo.com/tm-560-astro-motion
 
 */
 
-pageNumber = 4;
+pageNumber = 1;
 
 var gallery = undefined;
 
