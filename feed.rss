@@ -1,0 +1,43 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dcterms="http://purl.org/dc/terms/" version="2.0">
+<channel>
+<title>
+<![CDATA[ The Split Hours: Newsletter ]]>
+</title>
+<description>
+<![CDATA[ Newsletter der Sendung "The Split Hours" ]]>
+<link>https://gothfox.github.io</link>
+</description>
+<image>
+<url>https://gothfox.github.io/assets/feed/favicon.ico</url>
+<title>The Split Hours: Newsletter</title>
+<link>https://gothfox.github.io</link>
+</image>
+<generator>Foxy RSS Generator</generator>
+<lastBuildDate>Mon, 17 Jan 2024 17:00:00 GMT</lastBuildDate>
+<atom:link href="https://gothfox.github.io/feed.rss" rel="self" type="application/rss+xml"/>
+<copyright>
+<![CDATA[ Luminous Fox ]]>
+</copyright>
+<language>
+<![CDATA[ de ]]>
+</language>
+<managingEditor>
+<![CDATA[ luminousfox@proton.me (Luminous Fox) ]]>
+</managingEditor><item>
+<title>
+<![CDATA[ Herzlich willkommen! ]]>
+</title>
+<description>
+<![CDATA[ <img src="https://gothfox.github.io/assets/feed/luminousfox_GothicDJ.jpg"/><br>(English Version below)<br><br>🇩🇪<br><h2>Herzlich willkommen!</h2><br><br>Herzlich willkommen beim Newsletter der Sendung <i>The Split Hours</i>, präsentiert von mir, Luminous Fox. In diesem Newsletter erfahrt ihr Hintergrundinformationen zur Sendung, erhaltet Zugang zu unveröffentlichten Sendungen von mir und Empfehlungen von Musik, Tipps und mehr aus der Gothic-Szene. Schon bald wird der erste Newsletter versendet.<br><br>Bis bald! Ihr hört mich jeden Samstag von 22 bis Mitternacht. <br><br>Mehr Infos im Sendeplan auf <a href="https://gothfox.github.io" target="_blank" rel="noreferrer">gothfox.github.io</a><br><br>Herzliche Grüße,<br><br>Luminous Fox<br><br><hr><br>  <br>🇬🇧<br><h2>Welcome!</h2><br><br>Welcome to the newsletter of the show <i>The Split Hours</i>, presented by me, Luminous Fox. In this newsletter, you'll get behind-the-scenes insights into the show, access to unreleased episodes from me, and recommendations for music, tips, and more from the Gothic scene. The first newsletter will be sent out soon.<br><br>See you soon! You can hear me every Saturday from 10 PM to midnight live on Mixcloud. Check the schedule at <a href="https://gothfox.github.io" target="_blank" rel="noreferrer">gothfox.github.io</a><br><br>Best regards,<br><br>Luminous Fox<br><br> ]]>
+</description>
+<link>https://gothfox.github.io</link>
+<guid isPermaLink="false">VGh1LCAxOCBKYW4gMjAyNCAxNjoyOTowMCBHTVQ=</guid><category>
+<![CDATA[ Intro ]]>
+</category>
+<dc:creator><![CDATA[Luminous Fox]]></dc:creator>
+<pubDate>Thu, 18 Jan 2024 16:29:00 GMT</pubDate>
+<dcterms:abstract>(bilingual Newsletter)</dcterms:abstract>
+<dc:publisher>Luminous Fox</dc:publisher>
+</item>
+</channel>
+</rss>
