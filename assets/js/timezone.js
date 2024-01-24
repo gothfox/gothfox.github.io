@@ -49,13 +49,13 @@ function calculateDates(jsonData, userTimezone) {
 
 const fuchsdata = [
  
-  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/LuminousFox" },
+  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/GothRadio" },
   // Add more entries as needed
 ];
 
 const jsonData = [
  
-  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/LuminousFox" },
+  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/GothRadio" },
   // Add more entries as needed
 ];
 

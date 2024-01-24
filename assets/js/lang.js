@@ -23,6 +23,7 @@ const translations = {
 	schedule: "Schedule",
 	tunein: "Tune In",
 	end: "End",
+	picturetext: 'Luminous Fox, Founder of <i>GothRadio</i>',
   },
   de: {
     timezone: "Deine Zeitzone: ",
@@ -40,7 +41,7 @@ const translations = {
 	contacth2: '<span class="color">Kontakt</span>',
 	contactinfo: '	<p class="mb-4"> Integer erat turpis, vestibulum pellentesque aliquam ultricies, finibus nec dui. Donec bibendum enim mi, at tristique leo feugiat at. </p> <div> Email: <a href="mailto:info@company.com" class="tm-link-white">info@company.com</a> </div> <div class="tm-mb-45"> Tel: <a href="tel:0100200340" class="tm-link-white">010-020-0340</a> </div><div class="map-outer"> <div class="gmap-canvas">  </div> </div>',
 	contactme: "Kontakt",
-	contactmeper: 'Du erreichst mich per E-Mail unter:<p class="m" style="margin-top:1em;"></p>',
+	contactmeper: '<p>Verantwortlich für den Betrieb des Radios:</p><p>Luminous Fox</p><p class="m" style="margin-top:1em;"></p><hr>Jede*r DJ bei uns handelt für die eigenen Radiosendungen eigenverantwortlich.',
 	djschedule: '<span class="color">Sendeplan</span>',
 	home: "Start",
 	profile: "Profil",
@@ -48,6 +49,7 @@ const translations = {
 	tunein: "Stream starten",
 	end: "Ende",
 	welcometext: '<h2 class="mb-4 highlight">Willkommen bei Luminous Fox</h2><p class="mb-4">This HTML template has a motion video background loop which is provided by <a rel="sponsored" href="https://getfreepictures.com" target="_blank">Get Free Pictures</a>. This is one-page responsive layout for your websites. Feel free to use this for a commercial purpose. </p><p class="mb-0">You are not permitted to redistribute this template on your Free CSS collection websites. Please <a rel="nofollow" href="https://templatemo.com/contact" target="_blank">contact us</a> for more information. </p>',
+	picturetext: 'Luminous Fox, Gründer von <i>GothRadio</i>',
 	
 	
   },
@@ -114,6 +116,9 @@ if(contact){contact.innerHTML = `${translation.contact}`;}
 
 let welcometext = document.getElementById("welcometext");
 if(welcometext){fetchtranslation("welcometext","welcome");}
+
+let picturetext = document.getElementById("picturetext");
+if(picturetext){picturetext.innerHTML = `${translation.picturetext}`;}
 
 let contactme = document.getElementById("contactme");
 if(contactme){contactme.innerHTML = `${translation.contactme}`;}
