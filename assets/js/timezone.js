@@ -47,15 +47,11 @@ function calculateDates(jsonData, userTimezone) {
 
 // Alle Termine werden in UTC + 0 eingegeben.
 
-const fuchsdata = [
- 
-  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/GothRadio" },
-  // Add more entries as needed
-];
-
 const jsonData = [
  
-  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/GothRadio" },
+  { "dayOfWeek": 5, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Bauhausmensch</span><br><span>#GothDiscoInferno</span>', "profile": "https://www.mixcloud.com/bauhausmensch/","stream":"https://www.mixcloud.com/live/GothRadio" },
+
+  { "dayOfWeek": 6, "startTime": "21:00", "duration": 2, "name": '<span style="color:#ff33ff;">Luminous Fox</span><br><span>The Split Hours</span>', "profile": "https://www.mixcloud.com/LuminousFox","stream":"https://www.mixcloud.com/live/GothRadio" },
   // Add more entries as needed
 ];
 
