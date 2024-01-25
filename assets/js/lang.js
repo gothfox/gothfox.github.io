@@ -24,6 +24,12 @@ const translations = {
 	tunein: "Tune In",
 	end: "End",
 	picturetext: 'Luminous Fox, Founder of <i>GothRadio</i>',
+	shows: 'Shows',
+	mixcloudagreement: '<h2 class="mb-4 color">Our Shows</h2>Our broadcasts are hosted on Mixcloud. Our broadcasts are embedded here. In the process of embedding, a connection is established from you to Mixcloud. This requires you to have understood and agreed to Mixcloud\'s  <a href="https://www.mixcloud.com/privacy/" target="_blank" rel="noreferrer">privacy policy</a> and <a href="https://www.mixcloud.com/terms/" target="_blank" rel="noreferrer">terms of use</a>. By ticking the box and clicking on "Yes, continue", you declare that you have read and understood Mixcloud\'s privacy policy and terms of use in full and agree that by embedding our radio shows on this page, a connection will be made from you to Mixcloud. A cookie will be set so that you can start listening to the music directly on your next visit without having to read this text again.',
+	mixcloudagreement_error: 'You can only continue here if you check the box.',
+	mixcloudagreementbutton: 'Yes, continue.',
+	mixcloudload: 'Click here to load our shows',
+	mixcloudheader: 'Our Shows',
   },
   de: {
     timezone: "Deine Zeitzone: ",
@@ -50,6 +56,12 @@ const translations = {
 	end: "Ende",
 	welcometext: '<h2 class="mb-4 highlight">Willkommen bei Luminous Fox</h2><p class="mb-4">This HTML template has a motion video background loop which is provided by <a rel="sponsored" href="https://getfreepictures.com" target="_blank">Get Free Pictures</a>. This is one-page responsive layout for your websites. Feel free to use this for a commercial purpose. </p><p class="mb-0">You are not permitted to redistribute this template on your Free CSS collection websites. Please <a rel="nofollow" href="https://templatemo.com/contact" target="_blank">contact us</a> for more information. </p>',
 	picturetext: 'Luminous Fox, Gründer von <i>GothRadio</i>',
+	shows: 'Sendungen',
+	mixcloudagreement: 'Unsere Sendungen werden bei Mixcloud gehostet. Unsere Sendungen werden hier eingebunden. Dabei wird eine Verbindung von dir zu Mixcloud hergestellt. Dafür ist es notwendig, dass du die <a href="https://www.mixcloud.com/privacy/" target="_blank" rel="noreferrer">Datenschutzerklärung</a> und die <a href="https://www.mixcloud.com/terms/" target="_blank" rel="noreferrer">Benutzungsbedingungen</a> von Mixcloud verstanden hast und darin einwilligst. Mit dem Ankreuzen des Kästchens und dem Klick auf "Ja, weiter", erklärst du, die Datenschutzerklärung und Benutzungsbedingungen von Mixcloud vollständig gelesen und verstanden zu haben und erklärst dich damit einverstanden, dass durch das Einbinden unserer Radioshows auf diese Seite eine Verbindung von dir zu Mixcloud durchgeführt wird. Es wird ein Cookie gesetzt, damit du beim nächsten Besuch direkt mit der Musik starten kannst, ohne diesen Text erneut lesen zu müssen.',
+	mixcloudagreement_error: 'Hier geht es erst weiter, wenn du die Box ankreuzt.',
+	mixcloudagreementbutton: 'Ja, weiter.',
+	mixcloudload: 'Klick hier, um die Sendungen zu laden',
+	mixcloudheader: 'Unsere Sendungen',
 	
 	
   },
@@ -126,6 +138,9 @@ if(contactme){contactme.innerHTML = `${translation.contactme}`;}
 let contactinfo = document.getElementById("contactinfo");
 if(contactinfo){contactinfo.innerHTML = `${translation.contactinfo}`;}
 
+let shows = document.getElementById("shows");
+if(shows){shows.innerHTML = `${translation.shows}`;}
+
 let infotext = document.getElementById("infotext");
 if(infotext){fetchtranslation("infotext","infotext");}
 
@@ -134,6 +149,50 @@ let autobio = document.getElementById("autobio");
 
 let goodies = document.getElementById("goodies");
 if(goodies){fetchtranslation("goodies","goodies");}
+
+let mixcloud = document.getElementById("mixcloud");
+if(mixcloud){
+	
+	
+	
+	var agreement = localStorage.getItem('agreement');
+
+        if (!agreement) {
+            // If the 'agreement' cookie does not exist, show a message and a checkbox
+            mixcloud.innerHTML = '<p>'+`${translation.mixcloudagreement}`+'</p>' +
+                '<p><input type="checkbox" id="agreeCheckbox"> <button class="loadshowbuttons" onclick="handleAgree()">'+`${translation.mixcloudagreementbutton}`+'</button></p>';
+        } else {
+            // If the 'agreement' cookie exists, show an alert
+             mixcloud.innerHTML = '<h2 class="mb-4 color">'+`${translation.mixcloudheader}`+'</h2><button class="loadshowbuttons" onclick=\'fetchtranslation("mixcloud","mixcloud")\'>'+`${translation.mixcloudload}`+'</button>';
+        }
+		
+		
+		function handleAgree() {
+        // Check if the checkbox is checked
+        var agreeCheckbox = document.getElementById('agreeCheckbox');
+
+        if (agreeCheckbox.checked) {
+            // If the checkbox is checked, set the 'agreement' cookie in local storage
+            localStorage.setItem('agreement', '1');
+            fetchtranslation("mixcloud","mixcloud");
+		   
+		   
+		   
+        } else {
+            // If the checkbox is not checked, show an alert
+            alert(`${translation.mixcloudagreement_error}`);
+        }
+    }
+ //    });
+	
+	
+	
+	
+	
+	
+	
+	
+	}
 
 let contacth2 = document.getElementById("contacth2");
 if(contacth2){contacth2.innerHTML = `${translation.contacth2}`}
@@ -174,7 +233,7 @@ if(mid){
 */
 
 m = "bHVtaW5vdXNmb3hAcHJvdG9uLm1l";
-mu = '<a href="'+atob("bWFpbHRvOg")+atob(m)+'" target="_blank" rel="noreferrer">'+atob(m)+'</a>'
+mu = '<a href="'+atob("bWFpbHRvOg")+atob(m)+'" target="_blank" rel="noreferrer" class="highlight">'+atob(m)+'</a>'
 elements = document.querySelectorAll('.m');
 elements.forEach(element => {
   element.innerHTML = `${mu}`;
